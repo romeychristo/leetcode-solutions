@@ -3,3 +3,5 @@ Please note: Downloading and running these files directly may not work as expect
 This is because identical variable names are used across different files and folders, which can cause conflicts in TypeScript projects.
 
 For best results, we recommend copying the relevant code snippets into your own project, where you can adjust variable names and configurations as needed.
+
+Instructions to create your own TS project in vscode:
