@@ -17,30 +17,27 @@ This repository contains my solutions to various LeetCode problems implemented i
    pip install -r requirements-dev.txt
    ```
 
-2. **VS Code Extensions (Recommended):**
+2. **VS Code Extensions (Required):**
 
    - Python (ms-python.python)
    - Pylance (ms-python.vscode-pylance)
-   - Black Formatter (ms-python.black-formatter)
-   - isort (ms-python.isort)
    - Ruff (charliermarsh.ruff)
 
-3. **Code Formatting:**
-   - Code is automatically formatted using Black
-   - Imports are organized using isort
-   - Linting is done with Ruff
+3. **Code Formatting & Linting:**
+   - **Ruff** handles everything: formatting, linting, and import sorting
    - Configuration is in `pyproject.toml`
+   - Compatible with Black formatting style
 
-### Manual Formatting
+### Manual Commands
 
 ```bash
-# Format code with Black
-python -m black .
+# Format code with Ruff (replaces Black)
+python -m ruff format .
 
-# Organize imports with isort
-python -m isort .
+# Lint and auto-fix issues with Ruff (replaces isort + pylint)
+python -m ruff check --fix .
 
-# Lint with Ruff
+# Just check for issues without fixing
 python -m ruff check .
 ```
 
